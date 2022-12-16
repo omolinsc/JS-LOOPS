@@ -46,8 +46,8 @@ for ( const alumn of alumns) {
         approved++;  
     }
     if (approved > 1) {
-        alumn.isApproved = true;                                //!preguntar por qué alumn.isApproved y no alumns.isApproved
-        // console.log(alumn.name, "esta APROVADO!!");
+        alumn.isApproved = true;                                //! preguntar por qué alumn.isApproved y no alumns.isApproved
+        // console.log(alumn.name, "esta APROVADO!!");          //! si me interesa modificar el array alumns
     } else {
         alumn.isApproved = false;
     }
@@ -56,3 +56,27 @@ for ( const alumn of alumns) {
 for ( const alumn of alumns) {
     console.log(alumn);
 }
+
+
+// **Iteración #3: Probando For...of SI**
+
+// Usa un bucle forof para recorrer todos los destinos del array. Imprime en un ***console.log*** sus valores.
+// Puedes usar este array:
+
+
+console.log(" ");
+console.log("ITERATION#3---------------------------");
+
+const placesToTravel = ['Japon', 'Venecia', 'Murcia', 'Santander', 'Filipinas', 'Madagascar'];
+
+for ( const place of placesToTravel) {
+    console.log(place);
+}
+
+
+// **Iteración #4: Probando For...in SI**
+
+// Usa un **for...in** para imprimir por consola los datos del alienígena.. Puedes usar este objeto:
+
+console.log(" ");
+console.log("ITERATION#4---------------------------");
