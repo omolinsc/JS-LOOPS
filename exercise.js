@@ -47,9 +47,9 @@ for ( const alumn of alumns) {
     }
     if (approved > 1) {
         alumn.isApproved = true;                                //! preguntar por qué alumn.isApproved y no alumns.isApproved
-        // console.log(alumn.name, "esta APROVADO!!");          //! si me interesa modificar el array alumns
-    } else {
-        alumn.isApproved = false;
+        // console.log(alumn.name, "esta APROVADO!!");          //! si me interesa modificar el array ALUMNS
+    } else {                                                    //* si lo hacemos sobre ALUMNS estariamos intentando poner un array
+        alumn.isApproved = false;                               //* detrás del último objeto de ALUMNS, y da error    
     }
 };
 
@@ -113,3 +113,28 @@ for (let i = 0; i < placesToTravel2.length; i++) {
 
 console.log("Los destinos para viajar elegidos son:",places);
 
+
+// **Iteración #6: Mixed For e includes SI**
+
+// Usa un bucle **for** para recorrer todos los juguetes y elimina los que incluyan la palabra gato. Recuerda que puedes usar la función ***.includes()*** para comprobarlo.Puedes usar este array:
+
+console.log(" ");
+console.log("ITERATION#6---------------------------");
+
+const toys = [
+    {id: 5, name: 'Buzz MyYear'}, 
+    {id: 11, name: 'Action Woman'}, 
+    {id: 23, name: 'Barbie Man'}, 
+    {id: 40, name: 'El gato con Guantes'},
+    {id: 40, name: 'El gato felix'}
+];
+
+const noCatToy = [];
+
+for (const toy of toys) {
+    if (!toy.name.includes("gato")){
+        noCatToy.push(toy);
+    }
+}
+
+console.log(noCatToy);
